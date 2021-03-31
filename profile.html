@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            background-image: url('./dotted.svg');
+        }
+
+
+        .backbtn
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 75px;
+    margin-left: 75px;
+}
+.backbtn button
+{
+    border: none;
+    padding: 7px 30px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.username
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #45f3ff;
+    margin-top: 75px;
+    margin-right: 75px;
+    font-size: 25px;
+    /* background-color: rgb(230, 66, 128); */
+    /* width: 150px; */
+}
+.statistics
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #45f3ff;
+    margin-top: 75px;
+    margin-left: 675px;
+    font-size: 25px;
+    background-color: rgb(230, 66, 128);
+}
+    </style>
+
+<div class="backbtn">
+    <button   onclick="goBack()">(--  Back</button>
+</div>
+<script>
+    function goBack() 
+{
+  window.history.back();
+}
+</script>
+
+<div class="username">
+   username
+</div>
+
+<div class="statistics">
+    <img src="./doubleInvertedComma.png" alt="" style="width: 5px; height: 5px; padding-bottom: 5px;">
+    <span>Your all statistics</span>
+    <img src="./doubleInvertedComma.png" alt="" style="width: 5px; height: 5px; padding-bottom: 5px;">
+
+    <!-- style="color: aqua; display: flex; justify-content: center; align-items: center; margin-top: 100px; font-size: 25px; background-color: rgb(230, 66, 128); -->
+</div>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 300px;">
+        <img src="./loading.gif" style="height: 100px; width: 100px;" alt="">
+    </div>
+    
+</body>
+</html>

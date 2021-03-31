@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+
+        }
+        .about
+        {
+            color: aqua;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            margin-top: 50px;
+        }
+        .para-cont
+        {
+            width: 500px;
+            height: 500px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: aqua;
+        }
+
+
+ .para-cont
+{
+    /* display: inline-block; */
+    /* background-color: red; */
+    /* margin-top: 150px; */
+    margin-left: 100px;
+    animation-name: hibro;
+    animation-duration: 3s;
+    animation-iteration-count:  1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+@keyframes  hibro
+{
+     0%{
+         width: 0ch;
+         /* height: 400px; */
+     }
+     100%{
+         width: 100ch;
+         /* height: 100px; */
+     }
+}
+
+
+.backbtn
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 75px;
+    margin-left: 75px;
+}
+.backbtn button
+{
+    border: none;
+    padding: 7px 30px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.bottom
+{
+    color: rgb(233, 107, 174);
+    text-align: center;
+    font-size: 25px;
+}
+
+.imgg
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 35px;
+    margin-right: 35px;
+    height: 250px;
+    width: 250px;
+    
+}
+.imgg img
+{
+    height: 250px;
+    width: 250px;
+}
+    </style>
+
+
+<div class="backbtn">
+    <button   onclick="goBack()">(--  Back</button>
+</div>
+<script>
+    function goBack() 
+{
+  window.history.back();
+}
+</script>
+
+    <div  class="about">
+        About us
+    </div>
+
+    <div class="para-cont">
+        <p class="hii">
+            This platform allow users to share and purchase Nature photography . <br> 
+            And they can see their profile statistics that how many users have downloaded. <br>
+            Based  downloading of their images we will provide them points which they can utilise. <br>
+            on downloading others image. <br>
+            we provide 100 points to a new user also you can buy points through money. <br>
+            The image which contains stars have downloaded by more than 1 lakh different users! <br>
+
+
+        </p>
+    </div>
+   
+        <div class="imgg">
+            <img src="./image/Screenshot (165).png" alt="">
+        </div>
+    
+
+  <div class="bottom">
+      Capture and share your skills with world!
+  </div>
+
+</body>
+</html>

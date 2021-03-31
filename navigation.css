@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    /* --text-gray: #0d0d0e; */
+    /* --text-gray: #3f4954; */
+    /* --text-gray: #bdd2e7; */
+    --text-gray: #45f3ff;
+    /* --Abel:'Abel',cursive; */
+    --Abel: 'Lobster', cursive;
+    /* font-size: 18px; */
+ }
+
+ .container
+ {
+     margin: 0 5vw;
+ }
+
+
+ a
+{
+    text-decoration: none;
+}
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn
+{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+}
+   /* xxxxxxxxxxxxxxxxx        global class          xxxxxxxxxxxxxxxxxxxxxxx */
+.nav{
+    /* background-color: black; */
+    background:  rgb(10, 10, 10);
+
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu
+{
+    /* background-color: black; */
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse
+{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i
+{
+    font-size: 1.7rem;
+    color: var(--text-gray);
+}
+
+.collapse 
+{
+    height: 30rem;
+}
+.nav .nav-items
+{
+    display: flex;
+    
+    margin: 0;
+}
+
+.nav .nav-items .nav-link
+{
+    padding: 1.6rem 1rem;
+    font-size: 1.3rem;
+    position: relative;
+}
+.nav .nav-items .nav-link a
+{
+    color: var(--text-gray);
+
+}
+.nav .nav-brand a{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    display: block;
+    font-family: var(--Abel);
+    color: var(--text-gray);
+}
+/* 
+.nav .social
+{
+    padding: 1.4rem 0;
+}
+
+.nav .social i{
+    padding: 0.2rem;
+    color: var(--text-gray);
+} */
+/* ------------------------------------------- Navigation ----------------------------------- */
+
